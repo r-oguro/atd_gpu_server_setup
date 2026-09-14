@@ -1,0 +1,27 @@
+a-kojima    -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+d-tanii     -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+h-kawaguchi -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+h-kishi     -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+k-ikeda     -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+k-susuta    -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+k-takemura  -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+k-tejima    -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+m-nakano    -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+m-oka       -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+n-koga      -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+n-shinkai   -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+r-oguro     -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+r-suzuki    -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+s-hiai      -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+s-nagayama  -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+shii        -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+shiren      -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+t-sasame    -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+t-yamamoto  -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+tanaka      -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+tm-kimura   -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+y-hishiba   -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+y-kanemoto  -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+y-sango     -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
+y-shigekuni -fstype=nfs,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/home/&
++auto.home

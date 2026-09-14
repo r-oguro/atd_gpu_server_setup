@@ -1,0 +1,11 @@
+CTD_Works -fstype=nfs,rw,hard,intr,nosuid,nfsvers=4 ami-storage-l.advanced-media.co.jp:/export/CTD_Works
+Documents -fstype=nfs,rw,hard,intr,nosuid      ami-storage-l.advanced-media.co.jp:/export/CTD/Documents
+EE -fstype=nfs,rw,hard,intr,nosuid             ami-storage-l.advanced-media.co.jp:/export/CTD/EE
+EngineRelease -fstype=nfs,ro,hard,intr,nosuid  ami-storage-l.advanced-media.co.jp:/export/EngineRelease
+Jobs -fstype=nfs,rw,hard,intr,nosuid           ami-storage-l.advanced-media.co.jp:/export/CTD/Jobs
+Repositories -fstype=nfs,rw,hard,intr,nosuid   ami-storage-l.advanced-media.co.jp:/export/CTD/Repositories
+SpeechData -fstype=nfs,rw,hard,intr,nosuid     ami-storage-l.advanced-media.co.jp:/export/SpeechData
+TextData -fstype=nfs,rw,hard,intr,nosuid       ami-storage-l.advanced-media.co.jp:/export/TextData
+Tools -fstype=nfs,rw,hard,intr,nosuid          ami-storage-l.advanced-media.co.jp:/export/CTD/Tools
+Works -fstype=nfs,rw,hard,intr,nosuid          ami-storage-l.advanced-media.co.jp:/export/CTD_Works
+XCalibur -fstype=nfs,rw,hard,intr,nosuid       ami-storage-l.advanced-media.co.jp:/export/CTD/XCalibur

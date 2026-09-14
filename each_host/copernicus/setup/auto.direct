@@ -1,0 +1,1 @@
+/data   -fstype=nfs,vers=4.2,rw,hard,nosuid,nconnect=4 ami-s-atd01-l.advanced-media.co.jp:/data
