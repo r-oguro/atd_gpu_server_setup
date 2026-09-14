@@ -167,15 +167,19 @@ autoinstall:
       type: mount
   late-commands:
     - mkdir -p /target/root/autoinstall
-    - mkdir -p /mnt/ventoy
     - |
-      device=$(readlink -f /dev/disk/by-label/Ventoy)
-      test -b "$device"
-      mount -o ro "$device" /mnt/ventoy
-      test -d /mnt/ventoy/scripts
-    - cp -r /mnt/ventoy/scripts /target/root/autoinstall/
-    - chmod 0755 /target/root/autoinstall/scripts/*.sh
-    - umount /mnt/ventoy
+      set -eu
+      base_url=http://192.168.1.100:8000/scripts
+      install_dir=/target/root/autoinstall/scripts
+      mkdir -p "$install_dir"
+      for script in \
+        install-base-services.sh \
+        install-nvidia-driver.sh \
+        install-docker-nvidia-toolkit.sh \
+        install-cuda-toolkit.sh; do
+        wget -O "$install_dir/$script" "$base_url/$script"
+      done
+      chmod 0755 "$install_dir"/*.sh
     - curtin in-target --target=/target -- /root/autoinstall/scripts/install-base-services.sh
     - curtin in-target --target=/target -- /root/autoinstall/scripts/install-nvidia-driver.sh
     - curtin in-target --target=/target -- /root/autoinstall/scripts/install-docker-nvidia-toolkit.sh
