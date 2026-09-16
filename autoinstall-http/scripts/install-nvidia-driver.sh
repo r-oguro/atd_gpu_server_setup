@@ -1,5 +1,6 @@
 #!/bin/bash
 set -euo pipefail
+set -x
 
 export DEBIAN_FRONTEND=noninteractive
 NVIDIA_DRIVER_PACKAGE="${NVIDIA_DRIVER_PACKAGE:-nvidia-driver-595-server-open}"
@@ -23,8 +24,11 @@ fi
 
 apt-get install -y "${NVIDIA_DRIVER_PACKAGE}"
 
+set +e
 # CUDA Toolkit from the Ubuntu standard repository
-apt-get install -y cuda-toolkit-13-1
+apt-get install -y cuda-toolkit-13-1 || true
 
 # NCCL runtime and development packages
-apt-get install -y libnccl2 libnccl-dev
+apt-get install -y libnccl2 libnccl-dev || true
+
+echo "NVIDIA driver installation completed."

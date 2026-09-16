@@ -1,5 +1,6 @@
 #!/bin/bash
 set -euo pipefail
+set -x
 
 export DEBIAN_FRONTEND=noninteractive
 
@@ -30,3 +31,5 @@ nvidia-ctk runtime configure --runtime=docker
 
 systemctl enable docker
 systemctl enable containerd
+
+echo "Docker and NVIDIA toolkit installation completed."

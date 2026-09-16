@@ -1,5 +1,6 @@
 #!/bin/bash
 set -euo pipefail
+set -x
 
 export DEBIAN_FRONTEND=noninteractive
 
@@ -56,3 +57,5 @@ if ! grep -qF 'allow ^10\\..*$' /etc/munin/munin-node.conf; then
 fi
 munin-node-configure -shell | sh > /dev/null 2>&1 || true
 systemctl enable munin-node
+
+echo "Base services installation completed."

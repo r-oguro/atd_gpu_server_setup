@@ -97,10 +97,16 @@ curl http://192.168.1.100:8000/meta-data
 2. `precision87960_user-data.yaml` の `base_url` を配布用LinuxホストのIPアドレスに変更します。
 3. 対象サーバーにUbuntu ISOを書き込んだDVDを接続します。USBドライブは不要です。
 4. DVDドライブから起動します。
-5. Ubuntuインストーラーの起動項目で`e`キーを押し、カーネル起動行の末尾に次を追加します。
+5. Ubuntuインストーラーの起動項目で`e`キーを押し、カーネル起動行の末尾に次を追加します。";"が特殊な意味を持つので、全体をシングルクォーテーションで括るか、"\"で";"をエスケープしなければなりません。
 
 ```text
-autoinstall ds=nocloud-net;s=http://192.168.1.100:8000/
+autoinstall 'ds=nocloud-net;s=http://192.168.1.100:8000/'
+```
+
+もしくは
+
+```text
+autoinstall ds=nocloud-net\;s=http://192.168.1.100:8000/
 ```
 
 6. `Ctrl+X`または`F10`で起動します。キーは環境によって異なります。
